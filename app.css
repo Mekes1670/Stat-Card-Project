@@ -59,6 +59,10 @@ margin-top: 10%;
 font-size: 1.7rem;
 }
 
+td {
+  text-transform: uppercase;
+}
+
 p {
   color:hsla(0, 0%, 100%, 0.75);
   font-family: 'Inter', sans-serif;
