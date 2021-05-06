@@ -36,6 +36,7 @@ align-items: center;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
   background-color: hsl(277, 64%, 61%);
+  background-blend-mode: multiply;
 }
 
 .h1Accent {
@@ -60,6 +61,7 @@ font-size: 1.7rem;
 }
 
 td {
+  font-size: 0.8rem;
   text-transform: uppercase;
 }
 
@@ -96,11 +98,15 @@ p {
   font-size: 1.2rem;
 }
 
+.tableHeader th:last-of-type{
+  padding-left: 15px;
+}
+
 .tableStats td {
   padding: 0px 15px;
   font-family: 'Inter', sans-serif;
   color:hsla(0, 0%, 100%, 0.6);
-  font-size: 0.8rem;
+  font-size: 0.8em;
   margin-bottom: 10%;
 }
 
@@ -136,8 +142,11 @@ h3 {
   display: block;
   width:350px;
 }
-.tableStats td {
+.tableStats td, th {
   padding-bottom: 10px;
+  text-align: center;
+  padding-left: 10px;
+  margin-bottom: 10%;
 }
 
   p {
@@ -155,8 +164,7 @@ h3 {
     max-width: 100%;
     justify-content: center;
     align-items: center;
-    margin-left: 20px;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     border-radius: 20px;
     text-align: center;
     
@@ -169,14 +177,16 @@ h3 {
     width: 100%;
     height: 300px;
     border-radius: 0px;
+    background-blend-mode: multiply;
 
   }
   .leftCard {
     order: 2;
     
+    
   }
   body {
-    width: 80%;
+    width: 90%;
     margin: auto;
   }
 }
